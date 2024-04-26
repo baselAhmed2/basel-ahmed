@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* علشان الاليمنت ميطلعش بره perent */
+    box-sizing: border-box;
+    /* شكل السكرول */
+scroll-behavior: smooth;
+}
+
+header{
+    background-color: #f0f0f0 ;
+    width: 100%;
+   position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color:#3a6cf4 ;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.logo:hover{
+  color: #601cfc;
+  transition: 0.5s;
+}
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+color: #601cfc;
+}
+/*  */
+section{
+padding:100px 200px ;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/imges/back.jpg) no-repeat;
+    background-size: cover;
+background-position: center;
+/* يخلي صوره ثابته */
+background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.87em;
+    font-weight:900 ;
+    text-transform: capitalize;
+    
+}
+.main h2 span.di{
+    /* color:#4fa7ff; */
+    background-image: linear-gradient(to right bottom, #4fa7ff 30%,#205bdc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight:600;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.7em;
+
+
+}
+.main h2 span.hello{
+    font-size: 0.7em;
+    font-weight: 600 ;
+}
+.main h3{
+    color: rgba(255, 255, 255, 0.744);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.buttom{
+    color: white;
+    background-color:#031b34 ;
+    /* #2d5074  #1d4064 */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em 2.1854em;
+    letter-spacing: 1px;
+    border-radius: 20px ;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    margin-left: 5em;
+    letter-spacing: 3px;
+
+}
+.but2{
+    color: white;
+    background-color:#031b34 ;
+    /* #2d5074  */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em 2.1854em;
+    letter-spacing: 1px;
+    border-radius: 20px ;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+letter-spacing: 2px;
+}
+
+
+.but2:hover{
+    background-color: #205bdc;
+     transform: scale(1.1);
+     transition: 0.38s ease;
+
+}
+.buttom:hover{
+    background-color: #205bdc;
+     transform: scale(1.1);
+     transition: 0.38s ease;
+}
+.icons a {
+   color: white;
+   display: inline-block;
+   font-size: 1.89em;
+
+   padding-right: 100px;
+   position: relative;
+   left: 100px;
+    font-weight: 800;
+   
+}
+  
+.icons a:hover {
+    transition: 0.6s;
+   color: #4fa7ff;
+    transform: translateY(-20px);
+  }
+  /* ايكونات  */
+  @keyframes bounce-animation {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .main h2 span.di
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 1.3em;
+     display: flex;
+     text-wrap: wrap;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*  */
+
+.title2{
+  display: flex;
+  justify-content: center;
+  color:#3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.title2:hover{
+  color: #601cfc;
+  transition: 0.9s;
+}
+
+.countent{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15% );
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.icon{
+  color: #3a6cf4;
+  font-size: 7em;
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+.info h3{
+color: #3a6cf4;
+font-size: 1.2em;
+font-weight: 700;
+margin: 10px;
+}
+/*  */
+.projects{
+  background-color: #000016;
+}
+.projects .countent{
+  margin-top: 30px;
+}
+.pro-card{
+  background-color: white;
+  border: 1px solid white;
+  min-height: 18em;
+  min-width: 16em;
+  width: 16em;
+overflow: hidden;
+border-radius: 10px;
+margin: 14.78px;
+transition: 0.7s ease;
+}
+.pro-card:hover{
+ transform: scale(1.1);
+}
+.pro-img img{
+  width: 100%;
+}
+.pro-card:hover .pro-img{
+  opacity: 0.9;
+}
+.pro-info{
+  padding: 1em;
+}
+.pro-category{
+  font-size: 0.8em;
+  color: #000;
+  margin-bottom: 0.7em;
+}
+.pro-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+.more{
+  text-decoration: none;
+ color: #3a6cf4;
+ margin-top: 1.5em;
+}
+.more:hover{
+  transition: 0.5s;
+  color: #601cfc;
+}
+.contact .icon{
+  font-size: 4.5em;
+
+}
+.gmail a {
+  text-decoration: none;
+  color: #231557;
+}
+.gmail a:hover {
+
+  transition: 0.7s;
+  transform: scale(11.2em);
+  text-decoration: underline;
+}
+footer{
+ /* background-color:#000016 ; */
+ color:#231557;
+ padding: 2em;
+ display: flex;
+ justify-content: space-between;
+ /* margin-top: 3em; */
+ width: 100vh;
+ width: 100%;
+ /* height: 4em; */
+ flex-shrink:0;
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+.ico{
+  display: inline-block;
+  font-size: 1.6em;
+letter-spacing: 2em;
+  position: relative;
+  left: 6.8799;
+   font-weight: 800;
+   text-wrap: nowrap;
+   /* margin-right: 25%; */
+}
+.ico i{
+  color: #205bdc;
+
+}
+.ico i:hover {
+  transition: 0.6s;
+ color: #07294b;
+  transform: translateY(-20px);
+}
+/* ايكونات  */
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  header{
+    padding: 12px 20px ;
+  }
+  .navigation a{
+ padding-left: 10px;
+  }
+  .title2{
+    font-size: 1.4em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .main h2 {
+    font-size:1.3em ;
+  }
+  .main h3 {
+    font-size:0.8em ;
+  }
+  .countent{
+    flex-direction: column;
+align-items: center;
+  }
+  .icons a{
+    margin: 4px;
+    padding-right: 30px;
+  }
+  .buttom{
+    font-size: 0.9em;
+  }
+  .but2{
+    font-size: 0.9em;
+  }
+
+}
+@media screen and (max-width: 641px) {
+  body{
+    font-size: 12px;
+  }
+  .main h2{
+    font-size: 1.6em ;
+
+  }
+  .main h3{
+    font-size: 0.7em ;
+    
+  }
+}
+@media screen and (max-width: 450px) 
+  {
+  body{
+    font-size: 15px;
+  }
+  .main h2{
+    font-size: 1.3em ;
+
+  }
+  .main h3{
+    font-size: 0.7em ;
+    
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  /* قواعد الميديا كويري هنا */
+  .main {
+      background: url(/imges/backformopile.jpg); /* استبدل برابط الصورة المناسبة */
+      background-size: cover;
+      background-attachment: fixed; 
+      height: 100vh;
+  
+}
+}
